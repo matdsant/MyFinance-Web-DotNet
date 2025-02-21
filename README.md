@@ -1,4 +1,4 @@
-# 💻 MyFinance-Web-DotNet
+# 🧮 MyFinance-Web-DotNet
 
 📌 **MyFinance** é um projeto do Curso de Pós-Graduação em Engenharia de Software da PUC-MG.
 
