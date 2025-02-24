@@ -76,9 +76,9 @@ Vamos criar uma aplicação web para que famílias possam registrar suas receita
 Esta aplicação deve permitir que o usuário monte uma espécie de Plano de Contas para categorizar todas as Transações realizadas. É importante que se tenha também relatórios de despesas por período, permitindo uma análise detalhada das finanças.
 
 
-RF001 - Plano de Contas: O sistema deve permitir o cadastro de Plano de Contas para categorização das Receitas e Despesas previamente estabelecidas.
+**RF001** - Plano de Contas: O sistema deve permitir o cadastro de Plano de Contas para categorização das Receitas e Despesas previamente estabelecidas.
 
-Exemplo:
+**Exemplo**:
 
 ![image](https://github.com/user-attachments/assets/fec68eae-d997-4864-8998-986efe25dccc)
 
