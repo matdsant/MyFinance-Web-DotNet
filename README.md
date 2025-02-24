@@ -66,3 +66,17 @@ E para encerrar sua execução, pressione **Ctrl+C**.
 #### 📝 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+
+## 🔍 Descrição do Problema
+
+#### Proposta
+
+Vamos criar uma aplicação web para que famílias possam registrar suas receitas e despesas para análise de seus gastos e consequentemente um melhor planjeamento financeiro.
+Esta aplicação deve permitir que o usuário monte uma espécie de Plano de Contas para categorizar todas as Transações realizadas. É importante que se tenha também relatórios de despesas por período, permitindo uma análise detalhada das finanças.
+
+
+RF001 - Plano de Contas: O sistema deve permitir o cadastro de Plano de Contas para categorização das Receitas e Despesas previamente estabelecidas.
+
+Exemplo:
+![Planilha Plano de Contas](assets/images/Planilha_Plano_de_Contas.png)
