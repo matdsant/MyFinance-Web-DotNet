@@ -63,9 +63,7 @@ Now listening on: http://localhost:5240
 E para encerrar sua execução, pressione **Ctrl+C**.
 
 
-#### 📝 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 
 ## 🔍 Descrição do Problema
@@ -96,3 +94,12 @@ Esta aplicação deve permitir que o usuário monte uma espécie de Plano de Con
 **RNF005 - Suporte a Plataformas:** O sistema deve ser desenvolvido para plataformas web com design responsivo para renderização em telas de Smartphones e Tablets.
 
 **RNF006 - Linguagens de Implementação:** O sistema deve ser desenvolvido utilizando o **Microsoft ASP.NET MVC** com Banco de Dados **SQL-SERVER**
+
+
+## 🏛️ Modelagem Arquitetural
+![image](https://github.com/user-attachments/assets/429ca879-48cd-40ca-80dd-3b80ddaa998f)
+
+
+#### 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
