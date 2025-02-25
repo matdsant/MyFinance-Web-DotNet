@@ -80,6 +80,7 @@ Esta aplicação deve permitir que o usuário monte uma espécie de Plano de Con
 
 **RF001 - Plano de Contas:** O sistema deve permitir o cadastro de Plano de Contas para categorização das Receitas e Despesas previamente estabelecidas.
 **Exemplo**:
+
 ![image](https://github.com/user-attachments/assets/fec68eae-d997-4864-8998-986efe25dccc)
 
 
