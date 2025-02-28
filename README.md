@@ -40,21 +40,21 @@ MyFinance-Web-DotNet/
 
 O projeto está alocado no repositório em questão
 ```
-$ git clone https://github.com/seu-usuario/MyFinance-Web-DotNet.git
+git clone https://github.com/seu-usuario/MyFinance-Web-DotNet.git
 ```
 ```
-$ cd MyFinance-Web-DotNet/myfinance-web-dotnet
+cd myfinance-web-dotnet/
 ```
 #### 🏗 Construção do Projeto
 ```
-$ dotnet build
+dotnet build
 ```
 Se a construção for bem-sucedida, o executável será gerado em ```bin/Debug/net9.0/myfinance-web-dotnet.dll.```
 
 #### ▶ Executando a Aplicação
 Comando que deve ser utilizado:
 ```
-$ dotnet run
+dotnet run
 ```
 A aplicação estará diponível:
 ```
