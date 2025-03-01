@@ -21,13 +21,10 @@ A estrutura básica do projeto segue o padrão MVC:
 
 ```bash
 MyFinance-Web-DotNet/
-├── Controllers/        # Controladores da aplicação
-├── Models/            # Modelos da aplicação
-├── Views/             # Arquivos de interface (HTML + Razor)
-├── wwwroot/           # Arquivos estáticos (CSS, JS, imagens)
-├── appsettings.json   # Configurações da aplicação
-├── Program.cs         # Configuração inicial do projeto
-├── Startup.cs         # Configuração dos serviços e middleware
+├── myfinance-web-dotnet/           # Aplicação Web principal (MVC)
+├── myfinance-web-dotnet-service/   # Camada de serviços
+├── myfinance-web-dotnet-domain/    # Camada de domínio
+├── myfinance-web-dotnet-infra/     # Infraestrutura e acesso a dados
 ```
 ## 🚀 Como Construir e Executar
 
