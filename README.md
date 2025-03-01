@@ -28,26 +28,25 @@ MyFinance-Web-DotNet/
 ```
 ## 🚀 Como Construir e Executar
 
-#### 🔧 Requisitos
-
-🔹 Requisitos
-- .NET SDK instalado
-- Editor de código, como Visual Studio Code ou Visual Studio
+#### Requisitos
+🔹.NET SDK instalado 🔹Editor de código, como **Visual Studio**
 
 #### 📥 Clonar o repositório
-
-O projeto está alocado no repositório em questão
 ```
 git clone https://github.com/seu-usuario/MyFinance-Web-DotNet.git
 ```
 ```
 cd myfinance-web-dotnet/
 ```
+
 #### 🏗 Construção do Projeto
 ```
 dotnet build
 ```
-Se a construção for bem-sucedida, o executável será gerado em ```bin/Debug/net9.0/myfinance-web-dotnet.dll.```
+Se a construção for bem-sucedida, o executável será gerado:
+```
+bin/Debug/net9.0/myfinance-web-dotnet.dll.
+```
 
 #### ▶ Executando a Aplicação
 Comando que deve ser utilizado:
@@ -61,18 +60,13 @@ Now listening on: http://localhost:5240
 E para encerrar sua execução, pressione **Ctrl+C**.
 
 
-
-
-
-## 🔍 Descrição do Problema
-
-#### Proposta
+## 🔍 Descrição & Proposta
 
 Vamos criar uma aplicação web para que famílias possam registrar suas receitas e despesas para análise de seus gastos e consequentemente um melhor planjeamento financeiro.
 Esta aplicação deve permitir que o usuário monte uma espécie de Plano de Contas para categorizar todas as Transações realizadas. É importante que se tenha também relatórios de despesas por período, permitindo uma análise detalhada das finanças.
 
 
-#### Requisitos Funcionais e Não Funcionais
+####🔹Requisitos Funcionais e Não Funcionais
 
 **RF001 - Plano de Contas:** O sistema deve permitir o cadastro de Plano de Contas para categorização das Receitas e Despesas previamente estabelecidas.
 **Exemplo**:
