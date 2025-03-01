@@ -31,7 +31,7 @@ MyFinance-Web-DotNet/
 #### Requisitos
 🔹.NET SDK instalado 🔹Editor de código, como **Visual Studio**
 
-#### 📥 Clonar o repositório
+#### Clonar o repositório
 ```
 git clone https://github.com/seu-usuario/MyFinance-Web-DotNet.git
 ```
@@ -39,7 +39,7 @@ git clone https://github.com/seu-usuario/MyFinance-Web-DotNet.git
 cd myfinance-web-dotnet/
 ```
 
-#### 🏗 Construção do Projeto
+#### Construção do Projeto
 ```
 dotnet build
 ```
@@ -48,7 +48,7 @@ Se a construção for bem-sucedida, o executável será gerado:
 bin/Debug/net9.0/myfinance-web-dotnet.dll.
 ```
 
-#### ▶ Executando a Aplicação
+#### Executando a Aplicação
 Comando que deve ser utilizado:
 ```
 dotnet run
