@@ -9,12 +9,12 @@ O **"MyFinance Web"** é um sistema para controle de finanças pessoais, desenvo
 Durante o desenvolvimento, abordaremos aspectos como questões arquiteturais, técnicas de manutenção e refatoração de código, além de práticas de testes e implantação. Mais detalhes sobre a disciplina serão fornecidos no módulo inicial do curso.
 
 ## 🚀 Tecnologias Utilizadas
-- **C#**
-- **.NET Core**
-- **ASP.NET MVC**
-- **Entity Framework Core**
-- **SQL Server**
-- **Bootstrap (para estilização da interface)**
+✔ C#
+✔ .NET Core
+✔ ASP.NET MVC
+✔ Entity Framework Core
+✔ SQL Server
+✔ Bootstrap (para estilização da interface)
 
 ## 📂 Estrutura do Projeto
 A estrutura básica do projeto segue o padrão MVC:
@@ -30,6 +30,7 @@ MyFinance-Web-DotNet/
 
 #### 🔧 Requisitos
 
+🔹 Requisitos
 - .NET SDK instalado
 - Editor de código, como Visual Studio Code ou Visual Studio
 
