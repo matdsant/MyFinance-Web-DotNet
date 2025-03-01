@@ -14,7 +14,7 @@ Durante o desenvolvimento, abordaremos aspectos como questões arquiteturais, t�
 ✔ ASP.NET MVC
 ✔ Entity Framework Core
 ✔ SQL Server
-✔ Bootstrap (para estilização da interface)
+✔ Bootstrap (Para Interfaces)
 
 ## 📂 Estrutura do Projeto
 A estrutura básica do projeto segue o padrão MVC:
