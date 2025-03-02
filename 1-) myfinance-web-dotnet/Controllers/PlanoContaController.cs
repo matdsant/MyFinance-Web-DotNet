@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using myfinance_web_dotnet.Models;
+using myfinance_web_dotnet_service.Interfaces;
 
 namespace myfinance_web_dotnet.Controllers
 {
@@ -12,16 +14,35 @@ namespace myfinance_web_dotnet.Controllers
     public class PlanoContaController : Controller
     {
         private readonly ILogger<PlanoContaController> _logger;
+        private readonly IPlanoContaService _planoContaService;
 
-        public PlanoContaController(ILogger<PlanoContaController> logger)
+        public PlanoContaController(
+            ILogger<PlanoContaController> logger,
+            IPlanoContaService planoContaService
+            )
         {
             _logger = logger;
+            _planoContaService = planoContaService;
         }
 
         [HttpGet]
         [Route("Index")]
         public IActionResult Index()
         {
+            var listaPlanoContas =_planoContaService.ListarRegistros();
+            List<PlanoContaModel> listaPlanoContaModel = new List<PlanoContaModel>();
+
+            foreach (var item in listaPlanoContas){
+                var itemPlanoConta = new PlanoContaModel(){
+                    Id = item.Id,
+                    Descricao = item.Descricao,
+                    Tipo = item.Tipo
+                };
+
+                listaPlanoContaModel.Add(itemPlanoConta);
+            }
+            ViewBag.listaPlanoConta = listaPlanoContaModel;
+            
             return View();
         }
 
