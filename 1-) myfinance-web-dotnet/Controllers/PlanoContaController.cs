@@ -66,7 +66,8 @@ namespace myfinance_web_dotnet.Controllers
 
                 return View(planoContaModel);
             }
-            else{
+            else
+            {
                 return View();
             }
         }
@@ -88,7 +89,7 @@ namespace myfinance_web_dotnet.Controllers
         }
 
         [HttpGet]
-        [Route("Excluir")]
+        [Route("Excluir/{Id}")]
         public IActionResult Excluir(int? Id)
         {
             _planoContaService.Excluir((int)Id);

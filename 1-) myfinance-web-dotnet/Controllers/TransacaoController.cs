@@ -37,8 +37,10 @@ namespace myfinance_web_dotnet.Controllers
             var listaTransacoes = _transacaoService.ListarRegistros();
             List<TransacaoModel> listaTransacaoModel = new List<TransacaoModel>();
 
-            foreach (var item in listaTransacoes){
-                var itemTransacao = new TransacaoModel(){
+            foreach (var item in listaTransacoes)
+            {
+                var itemTransacao = new TransacaoModel()
+                {
                     Id = item.Id,
                     Historico = item.Historico,
                     Data = item.Data,
@@ -60,8 +62,9 @@ namespace myfinance_web_dotnet.Controllers
         public IActionResult Cadastrar(int? Id)
         {
             var ListaPlanoContas = new SelectList(_planoContaService.ListarRegistros(), "Id", "Descricao");
-            
-            var itemTransacao = new TransacaoModel(){
+
+            var itemTransacao = new TransacaoModel()
+            {
                 Data = DateTime.Now,
                 ListaPlanoContas = ListaPlanoContas
             };
@@ -99,12 +102,13 @@ namespace myfinance_web_dotnet.Controllers
         }
 
         [HttpGet]
-        [Route("Excluir")]
+        [Route("Excluir/{Id}")]
         public IActionResult Excluir(int? Id)
         {
             _transacaoService.Excluir((int)Id);
             return RedirectToAction("Index");
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
