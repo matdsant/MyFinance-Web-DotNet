@@ -17,8 +17,7 @@
         <th>Data</th>
     </tr>
 
-    @{
-        foreach (var item in (List<TransacaoModel>)ViewBag.ListaTransacao)
+    @foreach (var item in (List<TransacaoModel>)ViewBag.ListaTransacao)
         {
             <tr>
                 <td>@item.Id</td>
@@ -41,11 +40,11 @@
 
     function Atualizar(id)
     {
-        window.location.href = "../Transacao/Cadastrar" + id;
+        window.location.href = "../Transacao/Cadastrar/" + id;
     }
 
     function Excluir(id)
     {
-        window.location.href = "../Transacao/Excluir" + id;
+        window.location.href = "../Transacao/Excluir/" + id;
     }
 </script>

@@ -1,5 +1,5 @@
 @{
-   ViewData["Title"] = "Plano de Contas";
+    ViewData["Title"] = "Plano de Contas";
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -17,33 +17,30 @@
         <th>#</th>
     </tr>
 
-    @{
-        foreach (var item in (List<PlanoContaModel>)ViewBag.ListaPlanoConta)
-        {
-            <tr>
-                <td>@item.Id</td>
-                <td>@item.Descricao</td>
-                <td>@item.Tipo</td>
-                <td><button type="button" class="btn btn-block btn-outline-warning" onclick="Atualizar(@item.Id.ToString())">Editar</button></td>
-                <td><button type="button" class="btn btn-block btn-outline-danger" onclick="Excluir(@item.Id.ToString())">Excluir</button></td>
-            </tr>
-        }
+    @foreach (var item in (List<PlanoContaModel>)ViewBag.ListaPlanoConta)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Descricao</td>
+            <td>@item.Tipo</td>
+            <td><button type="button" class="btn btn-block btn-outline-warning"
+                    onclick="Atualizar(@item.Id.ToString())">Editar</button></td>
+            <td><button type="button" class="btn btn-block btn-outline-danger"
+                    onclick="Excluir(@item.Id.ToString())">Excluir</button></td>
+        </tr>
     }
 </table>
 
 <script>
-    function Novo()
-    {
+    function Novo() {
         window.location.href = "../PlanoConta/Cadastrar";
     }
 
-    function Atualizar(id)
-    {
-        window.location.href = "../PlanoConta/Cadastrar" + id;
+    function Atualizar(id) {
+        window.location.href = "../PlanoConta/Cadastrar/" + id;
     }
 
-    function Excluir(id)
-    {
-        window.location.href = "../PlanoConta/Excluir" + id;
+    function Excluir(id) {
+        window.location.href = "../PlanoConta/Excluir/" + id;
     }
 </script>
