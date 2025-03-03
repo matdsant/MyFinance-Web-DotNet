@@ -31,7 +31,6 @@ namespace myfinance_web_dotnet_service
         public void Excluir(int Id)
         {
             var PlanoConta = new PlanoConta() { Id = Id };
-            _dbContext.Attach(PlanoConta);
             _dbContext.Remove(PlanoConta);
             _dbContext.SaveChanges();
         }
