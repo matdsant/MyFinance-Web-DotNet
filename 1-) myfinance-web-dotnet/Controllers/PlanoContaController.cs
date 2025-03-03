@@ -88,8 +88,8 @@ namespace myfinance_web_dotnet.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpGet]
-        [Route("Excluir/{Id}")]
+        [HttpDelete]
+        [Route("Excluir")]
         public IActionResult Excluir(int? Id)
         {
             _planoContaService.Excluir((int)Id);

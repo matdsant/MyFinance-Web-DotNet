@@ -102,7 +102,7 @@ namespace myfinance_web_dotnet.Controllers
         }
 
         [HttpGet]
-        [Route("Excluir/{Id}")]
+        [Route("Excluir")]
         public IActionResult Excluir(int? Id)
         {
             _transacaoService.Excluir((int)Id);
