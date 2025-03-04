@@ -1,10 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using myfinance_web_dotnet.Models;
 using myfinance_web_dotnet_domain.Entities;
@@ -90,11 +86,11 @@ namespace myfinance_web_dotnet.Controllers
         }
 
         [HttpPost]
-        [Route("Excluir")]
+        [Route("Excluir/{Id}")] // Rota corrigida
         public IActionResult Excluir(int Id)
         {
-            _planoContaService.Excluir(Id);
-            return RedirectToAction("Index");
+            _planoContaService.Excluir(Id); // Exclui o registro
+            return RedirectToAction("Index"); // Redireciona para a lista de planos de contas
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
