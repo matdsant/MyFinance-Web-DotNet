@@ -25,8 +25,15 @@
             <td>@item.Tipo</td>
             <td><button type="button" class="btn btn-block btn-outline-warning"
                     onclick="Atualizar(@item.Id.ToString())">Editar</button></td>
-            <td><button type="button" class="btn btn-block btn-outline-danger"
-                    onclick="Excluir(@item.Id.ToString())">Excluir</button></td>
+            <td><button type="button" class="btn btn-block btn-outline-warning"
+                    onclick="Atualizar(@item.Id)">Editar</button></td>
+            <td>
+                <form action="../PlanoConta/Excluir/@item.Id" method="post"
+                    onsubmit="return confirm('Tem certeza que deseja excluir este registro?');">
+                    <button type="submit" class="btn btn-block btn-outline-danger">Excluir</button>
+                </form>
+            </td>
+
         </tr>
     }
 

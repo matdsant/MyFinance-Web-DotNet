@@ -1,11 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Logging;
 using myfinance_web_dotnet.Models;
 using myfinance_web_dotnet_domain.Entities;
 using myfinance_web_dotnet_service.Interfaces;
@@ -101,14 +95,13 @@ namespace myfinance_web_dotnet.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpGet]
-        [Route("Excluir")]
-        public IActionResult Excluir(int? Id)
+        [HttpPost]
+        [Route("Excluir/{Id}")] // Rota corrigida
+        public IActionResult Excluir(int Id)
         {
-            _transacaoService.Excluir((int)Id);
-            return RedirectToAction("Index");
+            _transacaoService.Excluir(Id); // Exclui o registro
+            return RedirectToAction("Index"); // Redireciona para a lista de transações
         }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
