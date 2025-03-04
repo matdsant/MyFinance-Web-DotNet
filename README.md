@@ -21,10 +21,10 @@ A estrutura básica do projeto segue o padrão MVC:
 
 ```bash
 MyFinance-Web-DotNet/
-├── myfinance-web-dotnet/           # Aplicação Web principal (MVC)
-├── myfinance-web-dotnet-service/   # Camada de serviços
-├── myfinance-web-dotnet-domain/    # Camada de domínio
-├── myfinance-web-dotnet-infra/     # Infraestrutura e acesso a dados
+├── 1-) myfinance-web-dotnet/           # Aplicação Web principal (MVC)
+├── 2-) myfinance-web-dotnet-service/   # Camada de serviços
+├── 3-) myfinance-web-dotnet-domain/    # Camada de domínio
+├── 4-) myfinance-web-dotnet-infra/     # Infraestrutura e acesso a dados
 ```
 ## 🚀 Como Construir e Executar
 
