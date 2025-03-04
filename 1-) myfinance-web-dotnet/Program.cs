@@ -13,22 +13,6 @@ builder.Services.AddDbContext<MyFinanceDbContext>();
 builder.Services.AddScoped<IPlanoContaService, PlanoContaService>();
 builder.Services.AddScoped<ITransacaoService, TransacaoService>();
 
-// Configuração do Swagger
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
-    {
-        Title = "MyFinance API",
-        Version = "v1",
-        Description = "Documentação da API MyFinance",
-        Contact = new Microsoft.OpenApi.Models.OpenApiContact
-        {
-            Name = "Seu Nome",
-            Email = "seu.email@example.com"
-        }
-    });
-});
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -40,17 +24,6 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-// Habilitar o Swagger apenas em ambiente de desenvolvimento
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyFinance API V1");
-    });
-}
 
 app.UseRouting();
 app.UseAuthorization();
